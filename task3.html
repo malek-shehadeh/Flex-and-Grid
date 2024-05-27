@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        background-color: cornflowerblue;
+        width: 525px;
+        height: 350px;
+        border-radius: 15px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 166px 166px 166px;
+        grid-template-rows: 50px 50px 50px 50px 50px 50px;
+        gap: 10px;
+        padding: 10px;
+        color: aqua;
+        margin: 150px auto;
+      }
+      .header {
+        grid-column: 1 / -1;
+        background-color: #02b9ab;
+        padding: 15px;
+      }
+      .footer {
+        grid-column: 1 / -1;
+        grid-row: 6 / 7;
+        background-color: darkcyan;
+        padding: 15px;
+      }
+      .aside {
+        grid-column: 1 / 2;
+        grid-row: 2 / 6;
+        background-color: #6bd46b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .article {
+        grid-column: 2 / 4;
+        grid-row: 2 / 6;
+        background-color: #f3aa4a;
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        justify-content: flex-end;
+      }
+      .image {
+        display: flex;
+        gap: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .container .image div {
+        background-color: rgb(111, 222, 0);
+        width: 14%;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Header</div>
+      <div class="aside">Aside</div>
+      <div class="article">
+        <div>Article</div>
+        <div class="image">
+          <div>image</div>
+          <div>image</div>
+          <div>image</div>
+        </div>
+      </div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>

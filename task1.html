@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 100px 100px 100px 100px 100px 100px 150px 100px;
+        grid-template-rows: 50px 100px 100px 50px 50px 80px 50px 50px;
+        gap: 2%;
+      }
+
+      .container div:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: rgb(104, 248, 91);
+        text-align: center;
+        color: #fff;
+      }
+      .container div:nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: rgb(223, 205, 243);
+        text-align: center;
+        color: #fff;
+      }
+
+      .container div:nth-child(3) {
+        grid-column-start: 6;
+        grid-column-end: 12;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        background-color: rgb(184, 161, 97);
+        text-align: center;
+        color: #fff;
+      }
+
+      .container div:nth-child(4) {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 6;
+        background-color: rgb(89, 109, 50);
+        text-align: center;
+        color: #fff;
+      }
+
+      .container div:nth-child(5) {
+        grid-column-start: 6;
+        grid-column-end: 12;
+        grid-row-start: 4;
+        grid-row-end: 6;
+        background-color: rgb(179, 194, 158);
+        text-align: center;
+        color: #fff;
+      }
+
+      .container div:nth-child(6) {
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        background-color: #2a8ac5;
+        text-align: center;
+        color: #fff;
+      }
+
+      .container div:nth-child(7) {
+        grid-column-start: 9;
+        grid-column-end: 12;
+        grid-row-start: 6;
+        grid-row-end: 7;
+        background-color: #d84b86;
+        text-align: center;
+        color: #fff;
+      }
+
+      .container div:nth-child(8) {
+        grid-column-start: 1;
+        grid-column-end: 12;
+        grid-row-start: 7;
+        grid-row-end: 8;
+        background-color: #0008ff;
+        text-align: center;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>Section 1</div>
+      <div>Section 2</div>
+      <div>Main Content</div>
+      <div>Section 3</div>
+      <div>Extra content</div>
+      <div>Related Images</div>
+      <div>Related Posts</div>
+      <div>Footer</div>
+    </div>
+  </body>
+</html>
